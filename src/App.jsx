@@ -16,19 +16,19 @@ const teapotMaskUrl = (() => {
 
 const clients = [
   {
-    quote: 'Trabajar con Celsius transformó la forma en que presentamos nuestro producto. El resultado superó lo que imaginábamos.',
+    quote: 'Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.',
     name: 'Nombre Apellido',
-    role: 'CEO & Fundador, Metal29',
+    role: 'Cargo, Empresa',
   },
   {
-    quote: 'Su proceso es tan cuidadoso como el resultado. Entienden el diseño como pocos.',
+    quote: 'Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.',
     name: 'Nombre Apellido',
-    role: 'CEO & Partner',
+    role: 'Cargo, Empresa',
   },
   {
-    quote: 'Cada detalle tenía una razón de ser. Nunca habíamos trabajado con alguien tan deliberado.',
-    name: 'Pamela Osorio',
-    role: 'Gerenta de Desarrollo, Ranco Cherries ltda.',
+    quote: 'Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.',
+    name: 'Nombre Apellido',
+    role: 'Cargo, Empresa',
   },
 ]
 
