@@ -19,14 +19,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # Maintenance mode: set the repo variable MAINTENANCE=true to publish
+      # only the static page in maintenance/ instead of the app
+      - name: Build maintenance page
+        if: vars.MAINTENANCE == 'true'
+        run: |
+          mkdir dist
+          cp maintenance/index.html public/CNAME public/favicon.png dist/
+          cp dist/index.html dist/404.html
+
       - uses: actions/setup-node@v4
+        if: vars.MAINTENANCE != 'true'
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
-      - run: npm run build
+      - if: vars.MAINTENANCE != 'true'
+        run: npm ci
+      - if: vars.MAINTENANCE != 'true'
+        run: npm run build
       # SPA fallback so BrowserRouter routes work on direct load/refresh
-      - run: cp dist/index.html dist/404.html
+      - if: vars.MAINTENANCE != 'true'
+        run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
