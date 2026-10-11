@@ -31,6 +31,23 @@
     "teamLabel": "El equipo"
   },
   "clients": {
-    "label": "Nos escogieron."
+    "label": "Nos escogieron.",
+    "items": [
+      {
+        "quote": "Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.",
+        "name": "Nombre Apellido",
+        "role": "Cargo, Empresa"
+      },
+      {
+        "quote": "Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.",
+        "name": "Nombre Apellido",
+        "role": "Cargo, Empresa"
+      },
+      {
+        "quote": "Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.",
+        "name": "Nombre Apellido",
+        "role": "Cargo, Empresa"
+      }
+    ]
   }
 }

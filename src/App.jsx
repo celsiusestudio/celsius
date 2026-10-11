@@ -14,36 +14,19 @@ const teapotMaskUrl = (() => {
   return `data:image/svg+xml;base64,${btoa(white)}`
 })()
 
-const clients = [
-  {
-    quote: 'Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.',
-    name: 'Nombre Apellido',
-    role: 'Cargo, Empresa',
-  },
-  {
-    quote: 'Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.',
-    name: 'Nombre Apellido',
-    role: 'Cargo, Empresa',
-  },
-  {
-    quote: 'Aquí va el testimonio del cliente sobre su experiencia trabajando con Celsius Studio.',
-    name: 'Nombre Apellido',
-    role: 'Cargo, Empresa',
-  },
-]
-
 const VISIBLE = 3
 const SLIDE_OFFSET = VISIBLE
-const extendedClients = [
-  ...clients.slice(-VISIBLE),
-  ...clients,
-  ...clients.slice(0, VISIBLE),
-]
 
 
 export default function App() {
   const { t } = useTranslation('global')
   const phrases = t('home.phrases', { returnObjects: true })
+  const clients = t('clients.items', { returnObjects: true })
+  const extendedClients = [
+    ...clients.slice(-VISIBLE),
+    ...clients,
+    ...clients.slice(0, VISIBLE),
+  ]
 
   const [index, setIndex] = useState(0)
   const [visible, setVisible] = useState(true)
@@ -91,7 +74,7 @@ export default function App() {
       const t = setTimeout(() => { setSlideOn(false); setSlideIdx(realEnd - 1) }, 520)
       return () => clearTimeout(t)
     }
-  }, [slideIdx])
+  }, [slideIdx, clients.length])
 
   // Carousel: re-enable transition after snap
   useEffect(() => {

@@ -31,6 +31,23 @@
     "teamLabel": "The team"
   },
   "clients": {
-    "label": "They chose us."
+    "label": "They chose us.",
+    "items": [
+      {
+        "quote": "The client's testimonial about their experience working with Celsius Studio goes here.",
+        "name": "First Last",
+        "role": "Role, Company"
+      },
+      {
+        "quote": "The client's testimonial about their experience working with Celsius Studio goes here.",
+        "name": "First Last",
+        "role": "Role, Company"
+      },
+      {
+        "quote": "The client's testimonial about their experience working with Celsius Studio goes here.",
+        "name": "First Last",
+        "role": "Role, Company"
+      }
+    ]
   }
 }
