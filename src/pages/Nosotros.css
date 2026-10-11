@@ -1,0 +1,146 @@
+.nosotros-page {
+  min-height: 100vh;
+  background: #111;
+  color: #fff;
+}
+
+.nosotros-navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.nosotros-hero {
+  padding: 80px var(--page-margin) 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.nosotros-hero__title {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(52px, 7vw, 96px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.nosotros-hero__sub {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: clamp(18px, 2vw, 26px);
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 560px;
+  line-height: 1.5;
+}
+
+.nosotros-section {
+  padding: 72px var(--page-margin);
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.nosotros-section--alt {
+  background: #181818;
+}
+
+.nosotros-section__label {
+  font-family: 'Gabarito', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2aaf24;
+  padding-top: 6px;
+}
+
+.nosotros-section__body {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: clamp(18px, 1.8vw, 24px);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 680px;
+}
+
+/* ── Team section ── */
+.nosotros-team {
+  padding: 80px var(--page-margin) 120px;
+}
+
+.nosotros-team__header {
+  margin-bottom: 48px;
+}
+
+.nosotros-team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.team-card {
+  background: #181818;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: background 0.2s;
+}
+
+.team-card:hover {
+  background: #1e1e1e;
+}
+
+.team-card__photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #242424;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card__photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.team-card__photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.6) 100%);
+}
+
+.team-card__info {
+  padding: 28px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-card__role {
+  font-family: 'Gabarito', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2aaf24;
+}
+
+.team-card__name {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(18px, 1.6vw, 22px);
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.team-card__bio {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 4px;
+}

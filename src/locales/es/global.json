@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "nosotros": "Nosotros",
+    "galeria": "Galería",
+    "umbral": "El Umbral",
+    "contacto": "Contacto"
+  },
+  "home": {
+    "heroPrefix": "Diseñamos",
+    "phrases": [
+      "interacción.",
+      "a medida.",
+      "diferente.",
+      "deliberado.",
+      "contigo.",
+      "único.",
+      "sin límites.",
+      "creativo."
+    ],
+    "quoteText": "Diseño; Es el cómo funcionan y se controlan las cosas. Si se hace bien, los resultados son brillantes y placenteros.",
+    "quoteAuthor": "— Don Norman, The Design of Everyday Things"
+  },
+  "nosotros": {
+    "heroTitle": "Somos Celsius.",
+    "heroSub": "Un studio de diseño deliberado, orientado a la experiencia y al detalle.",
+    "whoLabel": "Quiénes somos",
+    "whoBody": "Celsius Studio nació de la convicción de que el diseño bien hecho no es decorativo — es funcional, intencional y transforma la forma en que las personas se relacionan con lo que usan.",
+    "howLabel": "Cómo trabajamos",
+    "howBody": "Cada proyecto parte de entender el problema de fondo. Diseñamos desde la lógica, iteramos con el cliente y entregamos algo que funciona — no solo algo que se ve bien.",
+    "teamLabel": "El equipo"
+  },
+  "clients": {
+    "label": "Nos escogieron."
+  }
+}

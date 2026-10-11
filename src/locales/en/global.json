@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "nosotros": "About",
+    "galeria": "Gallery",
+    "umbral": "The Threshold",
+    "contacto": "Contact"
+  },
+  "home": {
+    "heroPrefix": "We design",
+    "phrases": [
+      "interaction.",
+      "custom.",
+      "different.",
+      "deliberately.",
+      "with you.",
+      "unique.",
+      "without limits.",
+      "creatively."
+    ],
+    "quoteText": "Design is really an act of communication, which means having a deep understanding of the person with whom the designer is communicating.",
+    "quoteAuthor": "— Don Norman, The Design of Everyday Things"
+  },
+  "nosotros": {
+    "heroTitle": "We are Celsius.",
+    "heroSub": "A deliberate design studio focused on experience and detail.",
+    "whoLabel": "Who we are",
+    "whoBody": "Celsius Studio was born from the conviction that good design is not decorative — it is functional, intentional, and transforms the way people relate to what they use.",
+    "howLabel": "How we work",
+    "howBody": "Every project starts by understanding the root problem. We design from logic, iterate with the client, and deliver something that works — not just something that looks good.",
+    "teamLabel": "The team"
+  },
+  "clients": {
+    "label": "They chose us."
+  }
+}
